@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jax Store</title>
+    <!-- Telegram WebApp SDK -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(220, 53, 69, 0.15);
+            border: 2px solid #dc3545;
+            padding: 30px 24px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .header-title {
+            color: #dc3545;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .divider {
+            height: 3px;
+            width: 60px;
+            background-color: #dc3545;
+            margin: 0 auto 20px auto;
+            border-radius: 2px;
+        }
+
+        .description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #495057;
+            margin-bottom: 28px;
+            font-weight: 500;
+        }
+
+        .btn-channel {
+            display: inline-block;
+            width: 100%;
+            padding: 14px 20px;
+            background-color: #dc3545;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+        }
+
+        .btn-channel:hover, .btn-channel:active {
+            background-color: #c82333;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(220, 53, 69, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1 class="header-title">Jax Store</h1>
+        <div class="divider"></div>
+        <p class="description">
+            ချန်နယ်ဝယ်ချင်တာဖြစ်ဖြစ် ရောင်းချင်တာဖြစ်ဖြစ် ဒီမှာဆက်သွယ်ပေးပါ။
+        </p>
+        
+        <!-- အောက်ပါ href နေရာတွင် သင့် Telegram Channel Link ကို အစားထိုးပါ -->
+        <a href="https://t.me/jaxxstore" class="btn-channel" target="_blank">
+            Join Telegram Channel
+        </a>
+    </div>
+
+    <script>
+        // Telegram WebApp အပြည့်အဝ အလုပ်လုပ်စေရန်
+        if (window.Telegram && window.Telegram.WebApp) {
+            window.Telegram.WebApp.ready();
+            window.Telegram.WebApp.expand();
+        }
+    </script>
+</body>
+</html>
